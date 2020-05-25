@@ -91,7 +91,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    @include tablets {
+    /* @include tablets {
         min-height: initial;
-    }
+    } */
 }
