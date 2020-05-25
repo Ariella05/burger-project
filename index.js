@@ -347,7 +347,7 @@ const performTransition = function(sectionNum) {
         }
 
 
-    }, 1200);
+    }, 1300);
 }
 
 
