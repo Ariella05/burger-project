@@ -299,6 +299,7 @@ function createOverlay(template) {
 
 // one page scroll
 
+
 const sections = document.querySelectorAll('.section');
 const display = document.querySelector('.maincontent');
 let inScroll = false;
