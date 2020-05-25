@@ -90,4 +90,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
+    @include tablets {
+        min-height: initial;
+    }
 }
