@@ -1,0 +1,32 @@
+.order {
+    background: url("../img/bg-order.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.order__title {
+    color: $yellow;
+    font-size: rem(72px);
+    @include gagalin();
+    text-align: center;
+    margin-bottom: rem(40px);
+    @include phones {
+        font-size: rem(58px);
+        line-height: 1.1;
+    }
+}
+
+.order__container {
+    transform: translateY(rem(-26px));
+    @include tablets {
+        transform: translateY(rem(-70px))
+    }
+    @include phones {
+        transform: translateY(0);
+    }
+}
+
+.error {
+    color: $yellow;
+}

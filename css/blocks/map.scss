@@ -1,0 +1,21 @@
+.map {
+    position: relative;
+    background-image: url('../img/map.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.footer__container {
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.footer__left {
+    @include phones {
+        margin-bottom: 20px;
+    }
+}

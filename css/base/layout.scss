@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    @include tablets {
+        font-size: 15px;
+    }
+    @include phones {
+        font-size: 14px;
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-size: rem(16px);
+    line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+    font-family: "Ubuntu";
+    font-style: normal;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul>li {
+    list-style: none;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+}
+
+.wrapper {
+    overflow: hidden;
+    width: 100%;
+    // min-width: calc(rem(940px) + rem(20px));
+    height: 100%;
+    position: relative;
+}
+
+.maincontent {
+    height: 100%;
+    transition: transform 1s;
+}
+
+.container {
+    max-width: rem(940px);
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.title {
+    @include gagalin();
+    font-size: rem(72px);
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.section {
+    height: 100%;
+    min-height: rem(650px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

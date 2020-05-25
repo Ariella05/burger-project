@@ -1,0 +1,38 @@
+.sidebar__list {
+    position: fixed;
+    top: rem(90px);
+    right: rem(50px);
+    z-index: 5;
+    @include tablets {
+        display: none;
+    }
+}
+
+.sidebar__dot {
+    display: block;
+    height: rem(6px);
+    width: rem(6px);
+    border-radius: 50%;
+    background-color: white;
+    margin-bottom: rem(14px);
+    position: relative;
+}
+
+.sidebar__dot:before {
+    content: "";
+    width: rem(14px);
+    height: rem(14px);
+    border: 1px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &sidebar__dot--active {
+        border-color: white;
+    }
+}
+
+.sidebar__dot--active:before {
+    border-color: white;
+}

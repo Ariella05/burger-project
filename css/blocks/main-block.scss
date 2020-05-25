@@ -1,0 +1,68 @@
+.main {
+    position: relative;
+    background-image: url('../img/burgers_01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.main__page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include tablets {
+        flex-direction: column;
+        padding: 0 15%;
+    }
+    @include phones {
+        padding: 0 12%;
+    }
+}
+
+.main__img {
+    margin-right: rem(10px);
+    padding-bottom: rem(60px);
+    width: 51%;
+    @include tablets {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0;
+        width: 100%;
+        padding-bottom: 0;
+    }
+}
+
+.main__icon {
+    max-width: rem(470px);
+}
+
+.main__icon-elem {
+    display: block;
+    max-width: 100%;
+}
+
+.main__title {
+    width: 49%;
+    @include tablets {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.main__title h1 {
+    color: $yellow;
+    font-size: rem(72px);
+    @include gagalin();
+}
+
+.main__subtitle {
+    color: white;
+    font-size: rem(62px);
+    @include lifehack();
+    line-height: 1;
+    margin-top: rem(10px);
+    @include phones {
+        font-size: rem(48px);
+    }
+}

@@ -1,0 +1,18 @@
+.button {
+    margin-left: rem(10px);
+    display: flex;
+    align-items: center;
+}
+
+.button__elem {
+    display: block;
+    padding: rem(10px) rem(15px);
+    border-radius: rem(5px);
+    background-color: $red;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: rem(13px);
+    font-family: "Ubuntu";
+    border: none;
+}

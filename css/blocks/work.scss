@@ -1,0 +1,25 @@
+.work {
+    background: url("../img/bg-howtowork.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.work__container {
+    text-align: center;
+}
+
+.work__title {
+    font-size: rem(72px);
+    @include gagalin();
+    margin-bottom: rem(40px);
+    color: black;
+    text-align: center;
+    @include tablets {
+        margin-bottom: rem(55px);
+    }
+    @include phones {
+        font-size: rem(60px);
+        margin-bottom: rem(35px);
+    }
+}

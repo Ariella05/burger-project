@@ -1,0 +1,51 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0005;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.container__overlay {
+    position: relative;
+}
+
+.formMode .container__overlay {
+    background-color: white;
+    padding: rem(20px);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.content {
+    width: rem(400px);
+    background: white;
+    border-radius: rem(5px);
+    padding: rem(10px);
+    color: black;
+    font-size: rem(16px);
+    margin: 0;
+}
+
+.formMode .content {
+    width: initial;
+}
+
+.formMode .button__elem {
+    display: inline-block;
+    margin-top: rem(10px);
+}
+
+.close {
+    font-size: rem(30px);
+    color: $red;
+    position: absolute;
+    right: 2%;
+    top: -5%;
+    text-decoration: none;
+}

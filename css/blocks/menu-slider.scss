@@ -1,0 +1,16 @@
+.menu-slider {
+    position: relative;
+    background-image: linear-gradient(#f9b43b 20%, #eb8d38 50%, #f8b23b 70%);
+}
+
+.menu-slider__container {
+    display: flex;
+    align-items: center;
+}
+
+.menu-slider__middle {
+    position: relative;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}

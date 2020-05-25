@@ -1,0 +1,19 @@
+.socials__icon {
+    width: rem(25px);
+    height: rem(25px);
+    fill: #575757;
+}
+
+.socials {
+    display: flex;
+}
+
+.socials__item {
+    margin-left: rem(12px);
+    &:first-child {
+        margin-left: 0;
+    }
+    @include tablets {
+        margin-left: rem(19px);
+    }
+}

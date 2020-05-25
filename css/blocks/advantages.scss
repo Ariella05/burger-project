@@ -1,0 +1,59 @@
+.advantages__list {
+    display: flex;
+    justify-content: space-between;
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.advantages__item {
+    text-align: center;
+    width: 32%;
+    @include phones {
+        display: flex;
+        width: 100%;
+        margin-bottom: rem(70px);
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.advantages__pic {
+    margin-bottom: rem(20px);
+    height: rem(90px);
+    display: inline-block;
+    @include phones {
+        width: 22%;
+        margin-bottom: 0;
+        margin-right: rem(15px);
+    }
+}
+
+.advantages__pic-elem {
+    display: block;
+    max-width: 100%;
+}
+
+.advantages__desc {
+    @include phones {
+        text-align: left;
+        width: 70%;
+    }
+}
+
+.advantages__item h2 {
+    margin-bottom: rem(20px);
+    font-size: rem(24px);
+    @include lifehack();
+    color: $black;
+    line-height: 1.25;
+}
+
+.advantages__item p {
+    font-weight: 300;
+    font-family: "Ubuntu";
+    font-size: rem(14px);
+    color: $black;
+    letter-spacing: 1.8;
+}

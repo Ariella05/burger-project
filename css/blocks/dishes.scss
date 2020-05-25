@@ -1,0 +1,102 @@
+    .dishes__list {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        transition: right 0.3s;
+    }
+    
+    .dishes__item {
+        display: flex;
+    }
+    
+    .dishes__item-active {
+        /* .dishes__desc {
+            width: 50vw;
+            @include tablets {
+                width: 80vw;
+            }
+            @include phones {
+                width: 25vw;
+            }
+        } */
+        .dishes__desc p {
+            opacity: 1;
+            transition: opacity 0.1s 0.3s;
+        }
+    }
+    
+    .dishes__link {
+        position: relative;
+        text-decoration: none;
+        display: block;
+        width: rem(80px);
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        @include tablets {
+            width: rem(88px);
+        }
+        @include phones {
+            width: rem(92px);
+        }
+    }
+    
+    .dishes__link-meat {
+        background-image: url('../img/meatmenu.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    .dishes__link-vegeterian {
+        background-image: url('../img/vegetarian.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right 10% center;
+    }
+    
+    .dishes__link-diet {
+        background-image: url('../img/diet.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right center;
+    }
+    
+    .dishes__name {
+        position: absolute;
+        font-size: rem(40px);
+        @include gagalin();
+        color: white;
+        white-space: nowrap;
+        top: 94%;
+        left: 50%;
+        transform-origin: 0 0;
+        transform: rotate(-90deg) translateY(-50%);
+        @include tablets {
+            top: 96%;
+        }
+        @include phones {
+            top: 92%;
+            font-size: rem(45px);
+        }
+    }
+    
+    .dishes__desc {
+        width: 0;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: width 0.3s;
+    }
+    
+    .dishes__desc p {
+        padding: 5%;
+        opacity: 0;
+    }

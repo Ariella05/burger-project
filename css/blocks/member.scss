@@ -1,0 +1,91 @@
+.member__item {
+    margin-bottom: rem(20px);
+}
+
+.member__item:last-child {
+    margin-bottom: 0;
+}
+
+.member__name {
+    color: white;
+    font-size: rem(14px);
+    text-decoration: none;
+    display: inline-block;
+    @include gagalin();
+    margin-bottom: rem(10px);
+    @include tablets {
+        font-size: rem(25px);
+    }
+}
+
+.member__name:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url("../img/triangle.svg") no-repeat left center;
+}
+
+.member__item--active .member__name {
+    color: $yellow;
+    &:before {
+        background: url("../img/triangle-act.svg") no-repeat left center;
+    }
+}
+
+.member__item--active .member__desc {
+    height: 100%;
+}
+
+.member__desc {
+    display: flex;
+    height: 0;
+    overflow: hidden;
+    line-height: 2;
+    align-items: center;
+    @include tablets {
+        flex-direction: column;
+    }
+}
+
+.member__photo {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: rem(35px);
+    min-width: rem(100px);
+    height: rem(100px);
+    @include tablets {
+        margin-right: 0;
+        margin-bottom: rem(10px);
+    }
+}
+
+.member__photo-elem {
+    display: block;
+    width: rem(100px);
+    height: rem(100px);
+    object-fit: cover;
+}
+
+.member__text {
+    @include tablets {
+        padding: 0 10%;
+    }
+    @include phones {
+        padding: 0 7%;
+    }
+}
+
+.member__occ {
+    font-weight: bold;
+    font-size: rem(14px);
+    color: white;
+    margin-bottom: rem(10px);
+}
+
+.member__text p {
+    font-weight: 300;
+    font-size: rem(14px);
+    color: white;
+}

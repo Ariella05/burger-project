@@ -1,0 +1,15 @@
+.footer {
+    position: absolute;
+    background-image: url("../img/footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    bottom: 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem(10px);
+}

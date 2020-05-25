@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+<filter id="grace">
+<feColorMatrix in="SourceGraphic" type="saturate" values="0">
+</feColorMatrix>
+</filter>
+</svg>

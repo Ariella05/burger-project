@@ -1,0 +1,24 @@
+.contacts {
+    font-size: rem(14px);
+}
+
+.contacts__address {
+    font-style: normal;
+    font-weight: 300;
+    @include phones {
+        margin-bottom: 7px;
+    }
+}
+
+.contacts__phone {
+    text-decoration: none;
+    font-weight: bold;
+    color: $red;
+    font-style: normal;
+    margin-top: rem(5px);
+}
+
+.contacts__phone {
+    padding-left: rem(15px);
+    background: url("../img/phone.svg") no-repeat left center;
+}

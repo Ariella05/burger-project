@@ -1,0 +1,79 @@
+.reviews__list {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reviews__item {
+    flex-basis: 25%;
+    height: 50%;
+    position: relative;
+    filter: grayscale(100%);
+    @include tablets {
+        flex-basis: 50%;
+        height: 25%;
+    }
+}
+
+.reviews__item:hover .reviews__hover {
+    opacity: 1;
+}
+
+.reviews__icon {
+    width: 100%;
+    height: 100%;
+}
+
+.reviews__icon-elem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.reviews__hover {
+    opacity: 0;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 17% 7%;
+    transition: opacity .4s;
+    @include tablets {
+        text-align: center;
+        padding: 5% 4%;
+    }
+    @include phones {
+        text-align: center;
+        padding: 32% 0%;
+    }
+}
+
+.reviews__name {
+    @include gagalin();
+    font-size: rem(14px);
+    margin-bottom: rem(18px);
+    @include phones {
+        font-size: rem(24px);
+    }
+}
+
+.reviews__hover p {
+    font-family: "Ubuntu";
+    font-weight: 300;
+    font-size: rem(14px);
+    line-height: 1.7;
+    margin-bottom: rem(15px);
+    @include phones {
+        display: none;
+    }
+}
+
+.reviews__hover .button__elem {
+    background-color: $black;
+    border: 1px solid $black;
+    display: inline-block;
+}

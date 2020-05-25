@@ -1,0 +1,142 @@
+video {
+    width: rem(711px);
+    height: rem(400px);
+    @include tablets {
+        width: rem(600px);
+    }
+    @include phones {
+        width: rem(500px);
+    }
+}
+
+.player {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.player__controls {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: rem(35px);
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 rem(25px);
+    background: #3e3e3e;
+}
+
+.player__start {
+    width: 0;
+    height: 0;
+    border: 18px solid transparent;
+    border-left-color: #626262;
+    border-right-width: 0;
+    background: transparent;
+    border-radius: 5px;
+    border-top-width: 14px;
+    border-bottom-width: 14px;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.paused {
+    width: 18px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    &:before,
+    &:after {
+        position: absolute;
+        content: "";
+        display: block;
+        width: 6px;
+        background: #626262;
+        top: 0;
+        bottom: 0;
+    }
+    &:after {
+        right: 0;
+    }
+    &:before {
+        left: 0;
+    }
+}
+
+.player__playback {
+    position: relative;
+    width: rem(444px);
+    height: 16px;
+    &:before {
+        content: "";
+        height: 5px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        background: #626262;
+        display: block;
+        transform: translateY(-50%);
+    }
+}
+
+.playback__button {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #626262;
+    border: none;
+    top: 50%;
+}
+
+.player__playback-button {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.player__sound {
+    display: flex;
+    align-items: center;
+}
+
+.player__sound-elem {
+    margin-right: rem(20px);
+    display: block;
+    &.sound__silent {
+        position: relative;
+        &:before {
+            content: '';
+            width: 4px;
+            height: 25px;
+            background: #3e3e3e;
+            position: absolute;
+            transform: rotate(45deg) translate(10px, -10px);
+        }
+    }
+}
+
+.player__sound-playback {
+    width: rem(58px);
+    height: 16px;
+    position: relative;
+    &:before {
+        content: "";
+        height: 5px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        background: #626262;
+        display: block;
+        transform: translateY(-50%);
+    }
+}
+
+.player__sound-button {
+    right: 0;
+    transform: translate(50%, -50%);
+}
