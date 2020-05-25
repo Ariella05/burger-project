@@ -304,6 +304,7 @@ const display = document.querySelector('.maincontent');
 let inScroll = false;
 
 const md = new MobileDetect(window.navigator.userAgent);
+const isMobile = md.mobile();
 
 
 
@@ -457,7 +458,7 @@ scrollBest.addEventListener('click', e => {
 
 
 
-if (md.mobile()) {
+if (isMobile) {
     $("body").swipe({
         swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
             const scrollDirection = direction == 'up' ? 'next' : 'prev';
