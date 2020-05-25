@@ -507,7 +507,7 @@ footer {
   line-height: 1; }
 
 .section {
-  height: 100%;
+  height: 100vh;
   min-height: 40.625rem;
   display: -webkit-box;
   display: -ms-flexbox;
