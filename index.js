@@ -5,7 +5,7 @@ const menulist = document.querySelector('.menu__list');
 const hamburger = document.querySelector('.hamburger');
 
 
-/* hamburger.addEventListener("click", function() {
+hamburger.addEventListener("click", function() {
     hamburger.classList.toggle("is-active"); {
         if (menulist.classList.contains('menu__list-visible')) {
             menulist.classList.remove('menu__list-visible');
@@ -13,7 +13,7 @@ const hamburger = document.querySelector('.hamburger');
             menulist.classList.add('menu__list-visible');
         }
     }
-}); */
+});
 
 
 // вертикальное меню
