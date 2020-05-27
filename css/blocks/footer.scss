@@ -12,4 +12,15 @@
     justify-content: space-between;
     align-items: center;
     padding: rem(10px);
+    @include phones {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.footer__left {
+    @include phones {
+        margin-bottom: 20px;
+    }
 }

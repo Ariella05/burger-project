@@ -2,7 +2,6 @@
     position: absolute;
     width: 100%;
     padding: rem(10px);
-    z-index: 1;
 }
 
 .header__container {
@@ -19,7 +18,7 @@
     @include tablets {
         width: 18%;
         margin-right: 0;
-        z-index: 10;
+        /* z-index: 10; */
     }
     @include phones {
         width: 50%;

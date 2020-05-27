@@ -1,3 +1,18 @@
+.burggg__compos {
+  z-index: 300; }
+
+.header {
+  z-index: 100; }
+
+.overlay {
+  z-index: 1000; }
+
+.sidebar__list {
+  z-index: 500; }
+
+.footer {
+  z-index: 200; }
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -527,8 +542,7 @@ footer {
 .header {
   position: absolute;
   width: 100%;
-  padding: 0.625rem;
-  z-index: 1; }
+  padding: 0.625rem; }
 
 .header__container {
   display: -webkit-box;
@@ -548,7 +562,7 @@ footer {
     .header__left {
       width: 18%;
       margin-right: 0;
-      z-index: 10; } }
+      /* z-index: 10; */ } }
   @media screen and (max-width: 640px) {
     .header__left {
       width: 50%; } }
@@ -809,8 +823,7 @@ footer {
 .sidebar__list {
   position: fixed;
   top: 5.625rem;
-  right: 3.125rem;
-  z-index: 5; }
+  right: 3.125rem; }
   @media screen and (max-width: 960px) {
     .sidebar__list {
       display: none; } }
@@ -1169,25 +1182,41 @@ footer {
 
 .map {
   position: relative;
-  background-image: url("../img/map.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center; }
+  /* background-image: url('../img/map.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; */ }
 
-@media screen and (max-width: 640px) {
-  .footer__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    text-align: center; } }
+.map__hint {
+  padding: 20px;
+  min-height: 55px;
+  min-width: 195px;
+  font-size: 20px;
+  line-height: 1;
+  color: #ffffff;
+  background-color: #f9b43b;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(48%, #eb8c38), color-stop(74%, #f9b43b), to(#f9b43b));
+  background-image: -webkit-linear-gradient(bottom, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+  background-image: -o-linear-gradient(bottom, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+  background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+  border-radius: 20px; }
 
-@media screen and (max-width: 640px) {
-  .footer__left {
-    margin-bottom: 20px; } }
+.map__balloon {
+  padding: 20px;
+  font-size: 30px;
+  line-height: 1;
+  color: #ffffff;
+  background-color: #f9b43b;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(48%, #eb8c38), color-stop(74%, #f9b43b), to(#f9b43b));
+  background-image: -webkit-linear-gradient(bottom, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+  background-image: -o-linear-gradient(bottom, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+  background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+  border-radius: 20px; }
+
+.map__burger-img {
+  float: right;
+  height: 100px;
+  width: 100px; }
 
 .footer {
   position: absolute;
@@ -1208,6 +1237,20 @@ footer {
   -ms-flex-align: center;
   align-items: center;
   padding: 0.625rem; }
+  @media screen and (max-width: 640px) {
+    .footer__container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      text-align: center; } }
+
+@media screen and (max-width: 640px) {
+  .footer__left {
+    margin-bottom: 20px; } }
 
 .contacts {
   font-size: 0.875rem; }
@@ -1939,8 +1982,7 @@ video {
   display: none;
   position: absolute;
   left: 100%;
-  top: 0;
-  z-index: 300; }
+  top: 0; }
 
 .compos__list {
   width: 16.875rem;
@@ -2238,8 +2280,7 @@ video {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  z-index: 1000; }
+  align-items: center; }
 
 .container__overlay {
   position: relative; }

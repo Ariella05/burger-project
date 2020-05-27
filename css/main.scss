@@ -1,8 +1,31 @@
+/// z-index
+.burggg__compos {
+    z-index: 300;
+}
+
+.header {
+    z-index: 100;
+}
+
+.overlay {
+    z-index: 1000;
+}
+
+.sidebar__list {
+    z-index: 500;
+}
+
+.footer {
+    z-index: 200;
+}
+
+/// цвета
 $black: #2f3234;
 $yellow: #f9b43b;
 $red: #e45028;
 $phones: 640px;
 $tablets: 960px;
+/// стили
 @import "./base/normalize.scss";
 @import "./base/media.scss";
 @import "./base/fonts.scss";
